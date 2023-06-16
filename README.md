@@ -64,10 +64,11 @@ Using the following project structure:
   - matrixPrinter.h
 - lib/
   - libMatrixPrinter.a
+- out/
 - src/
   - project.cpp
 ```
-this is how you would compile your project with the library using g++ on linux:<br>
+this is how you would build your project with the library using g++ on linux:<br>
 `g++ -L/path/to/ProjectFolder/lib /path/to/ProjectFolder/src/project.cpp -o /path/to/ProjectFolder/out/projectOut -lMatrixPrinter`
 <br><br>
 The compiled library can be found inside the GitHub repository (`out/libMatrixPrinter.a`), otherwise you will need to compile it yourself.
