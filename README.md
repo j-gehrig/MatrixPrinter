@@ -49,7 +49,7 @@ When the function is called, the console output should look like this:
    ┌───┬───┬───┐
  1 │ 1 │ 2 │ 3 │
    ├───┼───┼───┤
- 2 │ 6 │   │ 4 │
+ 2 │ 4 │   │ 6 │
    ├───┼───┼───┤
  3 │ 7 │ 8 │ 9 │
    └───┴───┴───┘
