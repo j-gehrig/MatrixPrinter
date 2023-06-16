@@ -55,6 +55,8 @@ When the function is called, the console output should look like this:
    └───┴───┴───┘
 ```
 
+<br>
+
 ## Building your project
 
 When you build your project the library needs to be linked properly, otherwise you will recieve errors.<br>
