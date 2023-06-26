@@ -28,31 +28,36 @@ To draw a matrix the function `drawBoard()` inside the namespace `matrixPrinter`
 #### The function requires the following parameters:<br>
 
 - A vector variable, which has elements of type string. Inside this variable are the characters in each cell from left to right, top to bottom.
-- The number of rows stored as an integer.<br>
 - The number of columns stored as an integer.<br>
+- The number of rows stored as an integer.<br>
+- Every nth bold column line inside the matrix. (optional)<br>
+- Every nth bold row line inside the matrix. (optional)<br>
 
 
 *Example:*
 ```c++
-vector<string> cells = { "1", "2", "3", 
-                         "4", " ", "6",  
-                         "7", "8", "9" };
-int rows = 3;
-int cols = 3;
+vector<string> cells = { "1", "2", "3", "4",
+                         "5", " ", "a", "8", 
+                         "9", "1", "2", "3",
+                         "4", "5", "6", "7" };
+int rows = 4;
+int cols = 4;
 
-matrixPrinter::drawBoard(cells, rows, cols);
+matrixPrinter::drawBoard(cells, cols, rows, 2, 2);
 ```
 
 When the function is called, the console output should look like this:
 ```
-     A   B   C 
-   ┌───┬───┬───┐
- 1 │ 1 │ 2 │ 3 │
-   ├───┼───┼───┤
- 2 │ 4 │   │ 6 │
-   ├───┼───┼───┤
- 3 │ 7 │ 8 │ 9 │
-   └───┴───┴───┘
+     A   B   C   D 
+   ┌───┬───┰───┬───┐
+ 1 │ 1 │ 2 ┃ 3 │ 4 │
+   ├───┼───╂───┼───┤
+ 2 │ 5 │   ┃ a │ 8 │
+   ┝━━━┿━━━╋━━━┿━━━┥
+ 3 │ 9 │ 1 ┃ 2 │ 3 │
+   ├───┼───╂───┼───┤
+ 4 │ 4 │ 5 ┃ 6 │ 7 │
+   └───┴───┸───┴───┘
 ```
 
 <br>
